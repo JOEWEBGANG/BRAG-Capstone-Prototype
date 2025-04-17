@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #32C8ED;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 120px; /* ✅ This creates space for your fixed header */
+    padding-bottom: 60px;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+    padding: 50px 20px;
+    text-align: center;
+    max-width: 95%;
+    width:95%;
+    margin: 25px auto;
+}
+
+.bigContainer{
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+    text-align:center;
+    width: 80%;
+    margin: 25px auto;
+    margin-top: 120px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /* space between the 3 sections */
+    padding: 10px 20px;
+
+}
+.header-left,
+.header-center,
+.header-right {
+    display: flex;
+    align-items: center;
+}
+.header-center {
+    flex: 1;
+    justify-content: center;
+}
+
+.header-right {
+    justify-content: flex-end;
+}
+
+.menuLinks {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.pageLink {
+    color: white;
+    text-decoration: none;
+}
+
+.pageLink:hover {
+    text-decoration: underline;
+    color: #ffcc00;
+    transition: 0.3s ease;
+  }
+
+#headerLogo {
+    width: 150px;
+    height: auto;
+}
+
+#footer {
+    background-color: #333;
+    color: white;
+    width: 100%;
+    bottom: 20;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+#footerImage{
+    height: 50px;
+    text-align: left;
+    margin-right: 20px;
+    margin-left: 0;
+}
+  
+.progress-bar{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 5px;
+    background-color: #ffcc00;
+    transition: width 0.1s ease-out;
+}
+
+#customMessageImg{
+    width: 75%;
+    height: 65%;
+}
+
+#fosterImg{
+    width: 50%;
+    height: 450px;
+}
+
+#barkboxLogo{
+    width: 150px;
+    height: 150px;
+    margin-left: 100px;
+}
+
+#bogobowlLogo{
+    width: 300px;
+    height: 150px;
+    margin-left: 100px;
+}
+
+#amazonImage{
+    width: 300px;
+    height: 200px;
+    margin-left: 100px;
+}
+
+#vetImage{
+    height: 200px;
+    margin-left: 100px;
+}
+
+#listImage{
+    height: 400px;
+}
+
+#rowContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 25px auto;
+    width: 75%;
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+.basicText{
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+  
+h3 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+#customMessage{
+    font-size: 40px;
+}
+.menuLinks{
+    display: flex;
+    flex-direction: row;
+}
+
+#usefulLinks{
+    text-align: left;
+    margin-right: 100px;
+}
+.Link{
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    text-align: left;
+}
