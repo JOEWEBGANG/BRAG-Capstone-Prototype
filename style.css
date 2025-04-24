@@ -25,16 +25,16 @@
     left: 0;
     width: 100%;
     height: 100vh; /* Ensures the image fills the entire viewport height */
-    background-image: url(img/bragEducate.jpg);
+    background-image: url(img/heropic.jpeg);
     background-size: cover; /* Ensures the background image fully covers the screen */
-    background-position: center center; /* Centers the image */
+    background-position: top center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
     z-index: -1; /* Places it behind other content */
 }
 .hero-text {
     position: absolute; /* Position text within the hero-section */
-    top: 50%; /* Adjust vertical position */
-    left: 50%; /* Adjust horizontal position */
+    top: 40%; /* Adjust vertical position */
+    left: 68%; /* Adjust horizontal position */
     transform: translate(-50%, -50%); /* Center the text */
     color: white; /* Text color */
     font-size: 2rem; /* Font size */
@@ -42,9 +42,22 @@
     padding: 20px; /* Add padding for spacing around text */
     background-color: rgba(0, 0, 0, 0.5); /* Transparent black background (adjust alpha for more/less transparency) */
     border-radius: 10px; /* Round the corners */
-    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.8); /* Glowing white border */
+    box-shadow: 0 0 20px 5px #32C8ED; /* Glowing white border */
 }
-  
+
+#hero-title{
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    text-align: right;
+}
+
+#hero-p{
+    font-size: 1.25rem;
+    letter-spacing: 1.5px;
+    font-weight: thin;
+}
+
   .hero-content {
     text-align: center;
     padding: 100px 20px;
@@ -54,16 +67,16 @@
 .container {
     background-color: #fff;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
-    padding: 50px 20px;
+    padding: 10px 20px 20px;
     text-align: center;
     max-width: 100%;
-    width:100%;
-    margin: 25px auto;
+    width:99%;
+    margin: 10px 10px 20px auto;
 }
 
 
 .bigContainer{
-    background-color: #333;
+    background-color: #000000;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
     text-align:center;
     width: 100%;
@@ -73,8 +86,8 @@
 
 .header-topper {
     width: 100%;
-    background-color: #333; /* Dark background for contrast */
-    color: #fff; /* White text */
+    background-color: #ffffff; /* Dark background for contrast */
+    color: #000000; /* White text */
     text-align: center;
     font-size: 12px;
     font-weight: bold;
@@ -82,19 +95,20 @@
     top: 0;
     left: 0;
     z-index: 9999; /* Make sure it sits above everything else */
-    border-bottom: 2px dotted white;
+    border-bottom: 2px dotted rgb(0, 0, 0);
   }
 .title{
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
+    
 }
 .header {
-    top: 65px;
+    top: 49px;
     z-index: 9998;
     position: fixed;
     width: 100%;
-    background-color: #333;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
     display: flex;
     flex-direction: row;
@@ -128,29 +142,30 @@
     text-align: center;
 }
 .pageLink {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
 .Link{
-    color: white;
+    color: rgb(0, 0, 0);
     margin: 10px;
     padding: 10px;
     text-align: left;
     font-size: 25px;
+    text-decoration: none;
 }
 
 .pageLink:hover {
     text-decoration: underline;
-    color: #ffcc00;
+    color: #32C8ED;
     transition: 0.3s ease;
   }
 
 
 
 #footer {
-    background-color: #333;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     width: 100%;
     bottom: 20;
     text-align: center;
@@ -174,45 +189,13 @@
     left: 0;
     width: 0%;
     height: 5px;
-    background-color: #ffcc00;
+    background-color: #32C8ED;
     transition: width 0.1s ease-out;
 }
 
 #customMessageImg{
-    width: 75%;
-    height: 65%;
-}
-
-#fosterImg{
     width: 50%;
-    height: 450px;
-}
-
-#barkboxLogo{
-    width: 150px;
-    height: 150px;
-    margin-left: 100px;
-}
-
-#bogobowlLogo{
-    width: 300px;
-    height: 150px;
-    margin-left: 100px;
-}
-
-#amazonImage{
-    width: 300px;
-    height: 200px;
-    margin-left: 100px;
-}
-
-#vetImage{
-    height: 200px;
-    margin-left: 100px;
-}
-
-#listImage{
-    height: 400px;
+    height: 25%;
 }
 
 #rowContainer{
@@ -222,12 +205,10 @@
     justify-content: center;
     margin: 25px auto;
     width: 75%;
-    font-size: 25px;
-    line-height: 1.5;
 }
 
 .basicText{
-    font-size: 25px;
+    font-size: 1.5rem;
     line-height: 1.5;
 }
 
@@ -251,6 +232,165 @@ h3 {
 #usefulLinks{
     text-align: left;
     margin-right: 100px;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    list-style-type: none;
 }
 
+#contactLinks{
+    text-align: center;
+    margin-right: 100px;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* styling for about.html and row containers... */
+/* Typography */
+.bigTitle {
+    font-size: 3rem;
+    color: #000000;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .bigAboutText {
+    font-size: 1.5rem;
+    color: #000000;
+    margin-bottom: 2rem;
+    text-align: center;
+    
+  }
+  
+  .aboutText {
+    font-size: 1.5rem;
+    color: black;
+    margin-bottom: 1rem;
+    line-height: 2rem;
+    text-align: center;
+    padding: 2.5rem;
+  }
+  
+  /* Row section */
+  #rowContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-start;
+    margin-top: 1rem;
+  }
+  
+  #rowContainer p {
+    flex: 1 1 65%;
+    margin-right: 1rem;
+    padding: 1rem;
+  }
+  
+  #aboutIMG {
+    flex: 1 1 30%;
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    object-fit: cover;
+  }
+
+  #fosterImg{
+    flex: 1 1 45%;
+    max-width: 600px;
+    max-height: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+#barkboxLogo{
+    flex: 1 1 30%;
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+#bogobowlLogo{
+    flex: 1 1 30%;
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+#amazonImage{
+    flex: 1 1 30%;
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+#vetImage{
+    flex: 1 1 30%;
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+#listImage{
+    flex: 1 1 30%;
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+  
+  /* Volunteer section */
+  #volunteerIMG {
+    display: block;
+    max-width: 100%;
+    margin: 1rem auto 2rem;
+    border-radius: 0.5rem;
+  }
+  
+  /* Value List Styling */
+  #value-list {
+    list-style: none;
+    padding-left: 0;
+    font-size: 1rem;
+    color: #000000;
+    line-height: 1.6;
+  }
+  
+  #value-list-item {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  /* Links */
+  a {
+    color: #0077cc;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Layout */
+  @media (max-width: 768px) {
+    #rowContainer {
+      flex-direction: column;
+    }
+  
+    #aboutIMG {
+      margin-top: 1rem;
+    }
+  }
 
