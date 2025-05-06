@@ -20,6 +20,11 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
+  #active{
+    color: #32C8ED;
+    text-decoration: underline;
+  }
+
   .hero-section {
     position: fixed; /* Keeps the background fixed */
     top: 0;
@@ -122,6 +127,7 @@
     justify-content: space-between; /* space between the 3 sections */
     padding: 10px 10px 0px;
     max-height: 90px;
+    text-decoration: none;
 }
 
 .header-left,
@@ -146,6 +152,7 @@
     margin: 0;
     padding: 0;
     text-align: center;
+    text-decoration: none;
 }
 .pageLink {
     color: rgb(0, 0, 0);
@@ -442,6 +449,29 @@ h3 {
   }
   
   #dogText p {
+    margin: 10px 0;
+  }
+
+  .capstoneText {
+    flex: 2;
+    max-width: 800px;
+    text-align: left;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #000000;
+    margin: 10px 0;
+    line-height: 1.5;
+  }
+  
+  #CapstoneText ol {
+    margin: 0 auto; /* centers the block */
+    padding: 0;
+    width: fit-content; /* shrink-wrap list */
+    list-style-position: inside;
+  }
+  
+  #capstoneText p {
     margin: 10px 0;
   }
   
